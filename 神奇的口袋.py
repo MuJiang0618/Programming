@@ -21,5 +21,5 @@ def main():
     print( Diversity(40,amount) )
 
 if __name__ == '__main__':
-    volume=[]    #volume在Diversity函数中没有定义，所以要设置成全局变量
+    volume=[0]    #volume在Diversity函数中没有定义，所以要设置成全局变量
     main()
