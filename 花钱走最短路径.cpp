@@ -13,7 +13,7 @@ struct Road  //存放路的信息
     int t;   //路费
 };
 
-vector< vector< Road> > G(110);
+vector< vector< Road> > G(110);  //用动态数组是为了增删道路的方便
 int minlen;  //目前找到的最段路径
 int minl[110][10010]; //到y城市用了x钱的最短路径
 int totallen;  //目前遍历的这条路目前的长度
@@ -61,7 +61,7 @@ int main()
         int s;   //边起点
         Road r;   //边信息
         cin >> s >> r.d >> r.L >> r.t ;
-        if(s != r.d){  //如果起点不等于终点，才把这条路加入链接表
+        if(s != r.d){  //如果起点不等于终点，才把这条路加入矩阵
             G[s].push_back(r) ;
         }
     }

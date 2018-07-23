@@ -1,6 +1,5 @@
 #2018/05/20
 #Leetcode 112
-#给定二叉树和整数值sum，判断是否有一条根节点到叶子节点的路径和为sum
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):

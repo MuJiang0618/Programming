@@ -7,7 +7,7 @@ int D[Max][Max];
 int n;
 int maxSum[Max][Max];  //存放每个顶点到底边的最大和
 
-int MaxSum(int i,int j) //得到（i,j)顶点到底边路径的最大和,避免重复计算该点到底边的最长距离
+int MaxSum(int i,int j) //从底层到顶层逐个算出每个顶点的MaxSum，并保存在maxSum中交由上层顶点利用,避免了重复计算
 {
     if(maxSum[i][j] != -1)
         return maxSum[i][j];
